@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-green: rgb(0, 199, 43);
+    --color-red: rgb(255, 0, 76);
+    --color-text: rgb(75, 75, 75);
+
+    --border-color: rgb(180, 180, 180);
+
+    --background-1: rgb(233, 233, 233);
+    --background-2: rgb(253, 253, 253);
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.align-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.go-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt-10 {
+    margin-top: 10px;
+} .mb-10 {
+    margin-bottom: 10px;
+} .gp-5 {
+    gap: 5px;
+} .gp-10 {
+    gap: 10px;
+} .gp-15 {
+    gap: 15px;
+} .gp-50 {
+    gap: 50px;
+}
+
+.row-1 {
+    padding: 20px 40px;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.btn {
+    display: block;
+    width: max-content;
+    padding: 7px 12px;
+    border-radius: 7px;
+    background-color: rgb(133, 133, 133);
+    color: white;
+    cursor: pointer;
+    font-size: 1.02rem;
+} .btn-success {
+    background-color: var(--color-green);
+} .btn-danger {
+    background-color: var(--color-red);
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--background-1);
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .row-1 {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,41 @@
+.navigation {
+    background-color: var(--background-2);
+    position: sticky;
+    top: 0;
+}
+
+.showCart {
+    font-size: 1.2rem;
+    background: none;
+    cursor: pointer;
+}
+
+.showMenu {
+    display: none !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .showMenu {
+        display: block !important;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: var(--background-2);
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .navigation ul.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}

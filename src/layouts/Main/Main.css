@@ -1,0 +1,16 @@
+.productSection {
+    background-color: var(--background-1);
+}
+
+.productSection__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.productSection__productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+}

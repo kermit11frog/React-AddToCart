@@ -1,0 +1,39 @@
+.cartOuter {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+}
+
+.cartBox {
+    background-color: var(--background-2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cartBox__title {
+    text-transform: uppercase;
+}
+
+.cartBox__cart {
+    border-collapse: collapse;
+}
+
+.cartBox__cart tr th {
+    text-align: start;
+}
+
+.cartBox__cart tr th,
+.cartBox__cart tr td {
+    padding: 10px;
+}
+
+.cartBox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: contain;
+}
